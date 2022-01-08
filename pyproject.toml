@@ -1,0 +1,70 @@
+<<<<<<< HEAD
+[tool.poetry]
+name = "py-cq"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+nb-cli = "^0.5.1"
+nonebot2 = "^2.0.0-alpha.16"
+nonebot-plugin-apscheduler = "^0.1.2"
+nonebot-adapter-cqhttp = "^2.0.0-alpha.16"
+aiohttp = "^3.8.1"
+selenium = "^4.1.0"
+MyQR = "^2.3.1"
+lxml = "^4.7.1"
+ffmpeg = "^1.4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+# 添加清华镜像
+[[tool.poetry.source]]
+name = "tsinghua"
+url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple/"
+
+[[tool.poetry.source]]
+name = "tsinghua"
+url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple/"
+=======
+[tool.poetry]
+name = "py-cq"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+nb-cli = "^0.5.1"
+nonebot2 = "^2.0.0-alpha.16"
+nonebot-plugin-apscheduler = "^0.1.2"
+nonebot-adapter-cqhttp = "^2.0.0-alpha.16"
+aiohttp = "^3.8.1"
+selenium = "^4.1.0"
+MyQR = "^2.3.1"
+lxml = "^4.7.1"
+ffmpeg = "^1.4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+# 添加清华镜像
+[[tool.poetry.source]]
+name = "tsinghua"
+url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple/"
+
+[[tool.poetry.source]]
+name = "tsinghua"
+url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple/"
+>>>>>>> 85f013a (first commit)
+default = true  # 添加一个 default 参数, 使 poetry 的默认回调行为都调用到这个清华镜像上.
