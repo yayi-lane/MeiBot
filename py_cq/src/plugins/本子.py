@@ -73,7 +73,6 @@ class Email_send:
 
         smtp_obj = SMTP_SSL(host ="smtp.qq.com")
         smtp_obj.ehlo(name ="smtp.qq.com")
-        smtp_obj.set_debuglevel(1)
         smtp_obj.login("iuioiui@qq.com","evysvaukctgjgfcg")
 
         mail_contet = """<h1 align="center">芽衣爱你呦!</h1><h1 align="center"><font size="2">图片加载可能有点慢请耐心等待</font></h1>"""

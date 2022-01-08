@@ -1,9 +1,15 @@
-<<<<<<< HEAD
 from nonebot import on_keyword, on_command
 from nonebot.adapters import Bot , Event
 from nonebot.rule import regex,to_me
 from nonebot.typing import T_State
 from nonebot.adapters.cqhttp import Bot ,Message , GroupMessageEvent
+import re
+from nonebot import on_keyword ,on_command
+from nonebot.adapters import Bot ,Event
+from nonebot.rule import regex ,to_me
+from nonebot.typing import T_State
+from nonebot.adapters.cqhttp import Bot ,Message ,GroupMessageEvent
+import random
 import re
 
 hallo_2 = on_keyword(["你好", "嗨", "哈喽"], rule= regex(regex= "芽衣", flags= re.M|re.I),priority= 10)
@@ -15,14 +21,7 @@ async def h_r(bot:Bot,event:GroupMessageEvent,state:T_State):
     
     await hallo_2.finish(Message("[CQ:at,qq={}]".format(id) +"你好啊~"))
 
-=======
-from nonebot import on_keyword ,on_command
-from nonebot.adapters import Bot ,Event
-from nonebot.rule import regex ,to_me
-from nonebot.typing import T_State
-from nonebot.adapters.cqhttp import Bot ,Message ,GroupMessageEvent
-import random
-import re
+
 
 hallo = on_keyword(["你好" ,"嗨" ,"哈喽"], rule= regex(regex= r"芽衣|(@芽衣)" ,flags= re.M|re.I) ,priority= 35)
 
@@ -88,4 +87,3 @@ async def h_r(bot:Bot,event:GroupMessageEvent,state:T_State):
     send = random.choice(send_mgs)
 
     await eggshell_b.finish(Message("[CQ:tts,text={}]".format(send)))
->>>>>>> 85f013a (first commit)
